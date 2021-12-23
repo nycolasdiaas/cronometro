@@ -4,7 +4,7 @@ var hh = 0;
 var mm = 0;
 var ss = 0;
 
-var tempo = 50; // Quantos milésimos valem 1s?
+var tempo = 1000; // Quantos milésimos valem 1s?
 var cron;
 
 //Iniciar o temporizador
