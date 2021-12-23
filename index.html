@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    *{
+        margin: 0 auto;
+        padding: 0;
+    }
+    body{
+        background-color: #0093E9;
+        
+        
+    }
+    .max-width{
+        max-width: 500px;
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+        margin-top: 10%;
+        background-color: #fff;
+        box-shadow: 0 0 5px #fff;
+        text-align: center;
+        
+    }
+    h1{
+       font-family: Roboto;
+       margin-top: 1.2rem;
+   }
+
+    button{
+       padding: 1rem;
+       border: none;
+       outline: none;
+       font-size: 1rem;
+       transition: all .5s;
+       cursor: pointer;
+       border-radius: 6px;
+   }
+    button:hover{
+       background-color: #a1c0d1;
+   }
+   button:active {
+       background-color: #111;
+   }
+/*
+   .btn-green {
+        background-color: #b2d1a1;
+    }
+
+    .btn-yellow {
+        background-color: #d1cba1;
+    }
+
+    .btn-red {
+        background-color: #d1a1a1;
+    }
+*/
+</style>
+
+<body>         
+    <div class="max-width">
+        <button onclick="start();" class="btn-green">Start</button>
+        <button onclick="pause();" class="btn-yellow">Pause</button>
+        <button onclick="stop();" class="btn-red">Stop</button>
+        <h1 id="counter">00:00:00</h1>            
+    </div>
+
+<script src="cron.js"></script>
+</body>
+</html>
